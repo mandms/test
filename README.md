@@ -1,2 +1,1 @@
-# test
-My test repo
+Юдин ПС-12
