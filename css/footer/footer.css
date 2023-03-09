@@ -1,0 +1,42 @@
+.footer {
+    height: 378px;
+    background: url(../../images/footer-background.jpg), #4D565D no-repeat center;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.footer__navbar {
+    height: 89px;
+    background: rgba(35, 47, 56, 0.6);
+    border-radius: 0;
+}
+
+.footer__container {
+    height: 34px;
+}
+
+.footer__title {
+    height: 26px;
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer__nav {
+    height: 32px;
+}
+
+.footer__link {
+    width: 57px;
+    height: 26px;
+    font-family: 'Oxygen', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}

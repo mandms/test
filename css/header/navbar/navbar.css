@@ -1,0 +1,31 @@
+.header__navbar {
+    height: 74px;
+}
+
+.header__container {
+    height: 40px;
+}
+
+.header__title {
+    height: 26px;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.header__nav {
+    height: 40px;
+}
+
+.header__link {
+    height: 20px;
+    font-family: 'Oxygen', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}

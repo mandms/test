@@ -1,0 +1,8 @@
+@import "featured-posts/featured-posts.css";
+@import "featured-post/featured-post.css";
+@import "recent/recent.css";
+@import "resent-post/recent-post.css";
+
+.section {
+    height: 1255px;
+}
