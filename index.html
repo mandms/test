@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-    <link href="css/header/header.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
-    <div class="header__navbar">
-        <div class="header__container">
-            <span class="header__title header__title_color_light">Escape.</span>
-            <nav class="header__nav">
-                <a class="header__link header__link_color_light" href="#">HOME</a>
-                <a class="header__link header__link_color_light" href="#">CATEGORIES</a>
-                <a class="header__link header__link_color_light" href="#">ABOUT</a>
-                <a class="header__link header__link_color_light" href="#">CONTACT</a>
-            </nav>
-        </div>
+    <div class="header__navbar header__navbar_color_light">
+        <span class="header__title">Escape.</span>
+        <nav class="header__nav">
+            <a class="header__link header__navbar_color_light" href="#">HOME</a>
+            <a class="header__link header__navbar_color_light" href="#">CATEGORIES</a>
+            <a class="header__link header__navbar_color_light" href="#">ABOUT</a>
+            <a class="header__link header__navbar_color_light" href="#">CONTACT</a>
+        </nav>
     </div>
     <div class="intro">
         <h1 class="intro__title">Let's do it together.</h1>
         <p class="intro__text">We travel the world in search of stories. Come along for the ride.</p>
-        <button class="intro__button">View Latest Posts</button>
-    </div>
-    <div class="menu">
-        <nav class="menu__nav">
-            <a class="menu__link" href="">Nature</a>
-            <a class="menu__link" href="">Photography</a>
-            <a class="menu__link" href="">Relaxation</a>
-            <a class="menu__link" href="">Vacation</a>
-            <a class="menu__link" href="">Travel</a>
-            <a class="menu__link" href="">Adventure</a>
-        </nav>
+        <a class="intro__button" href="#recent">View Latest Posts</a>
     </div>
 </header>
+<div class="menu">
+    <nav class="menu__nav">
+        <a class="menu__link" href="#">Nature</a>
+        <a class="menu__link" href="#">Photography</a>
+        <a class="menu__link" href="#">Relaxation</a>
+        <a class="menu__link" href="#">Vacation</a>
+        <a class="menu__link" href="#">Travel</a>
+        <a class="menu__link" href="#">Adventure</a>
+    </nav>
+</div>
 <section class="section">
     <div class="featured-posts">
         <h2 class="featured-posts__title">Featured Posts</h2>
@@ -45,8 +47,10 @@
                     <h3 class="featured-post__title">The Road Ahead</h3>
                     <p class="featured-post__text">The road ahead might be paved - it might not be.</p>
                     <div class="featured-post__info">
-                        <img class="featured-post__image" src="images/image-1.jpg" alt="Mat Vogels">
-                        <span class="featured-post__author">Mat Vogels</span>
+                        <div class="featured-post__info-wrap">
+                            <img class="featured-post__image" src="images/image-1.jpg" alt="Mat Vogels">
+                            <span class="featured-post__author">Mat Vogels</span>
+                        </div>
                         <span class="featured-post__date">September 25, 2015</span>
                     </div>
                 </div>
@@ -55,19 +59,23 @@
                 <div class="featured-post__category">
                     <p class="featured-post__category-text">Adventure</p>
                 </div>
-                <h3 class="featured-post__title">From Top Down</h3>
-                <p class="featured-post__text">Once a year, go someplace you’ve never been before.</p>
-                <div class="featured-post__info">
-                    <img class="featured-post__image" src="images/image.jpg" alt="William Wong">
-                    <span class="featured-post__author">William Wong</span>
-                    <span class="featured-post__date">September 25, 2015</span>
+                <div class="featured-post__container">
+                    <h3 class="featured-post__title">From Top Down</h3>
+                    <p class="featured-post__text">Once a year, go someplace you’ve never been before.</p>
+                    <div class="featured-post__info">
+                        <div class="featured-post__info-wrap">
+                            <img class="featured-post__image" src="images/image.jpg" alt="William Wong">
+                            <span class="featured-post__author">William Wong</span>
+                        </div>
+                        <span class="featured-post__date">September 25, 2015</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="recent">
-        <h2 class="recent__title">Most Recent</h2>
-        <div class="recent__posts">
+    <div class="recent-posts">
+        <h2 id="recent" class="recent-posts__title">Most Recent</h2>
+        <div class="recent-posts__items">
             <div class="recent-post">
                 <img class="recent-post__image" src="images/image-2.jpg" alt="Nature">
                 <div class="recent-post__header">
@@ -75,8 +83,10 @@
                     <p class="recent-post__text">Life begins at the end of your comfort zone.</p>
                 </div>
                 <div class="recent-post__info">
-                    <img class="recent-post__image-author" src="images/image.jpg" alt="William Wong">
-                    <span class="recent-post__author">William Wong</span>
+                    <div class="recent-post__info-wrap">
+                        <img class="recent-post__author-image" src="images/image.jpg" alt="William Wong">
+                        <span class="recent-post__author">William Wong</span>
+                    </div>
                     <span class="recent-post__date">9/25/2015</span>
                 </div>
             </div>
@@ -87,8 +97,10 @@
                     <p class="recent-post__text">No place is ever as bad as they tell you it’s going to be.</p>
                 </div>
                 <div class="recent-post__info">
-                    <img class="recent-post__image-author" src="images/image-1.jpg" alt="Mat Vogels">
-                    <span class="recent-post__author">Mat Vogels</span>
+                    <div class="recent-post__info-wrap">
+                        <img class="recent-post__author-image" src="images/image-1.jpg" alt="Mat Vogels">
+                        <span class="recent-post__author">Mat Vogels</span>
+                    </div>
                     <span class="recent-post__date">9/25/2015</span>
                 </div>
             </div>
@@ -99,8 +111,10 @@
                     <p class="recent-post__text">We travel not to escape life, but for life not to escape us.</p>
                 </div>
                 <div class="recent-post__info">
-                    <img class="recent-post__image-author" src="images/image-1.jpg" alt="Mat Vogels">
-                    <span class="recent-post__author">Mat Vogels</span>
+                    <div class="recent-post__info-wrap">
+                        <img class="recent-post__author-image" src="images/image-1.jpg" alt="Mat Vogels">
+                        <span class="recent-post__author">Mat Vogels</span>
+                    </div>
                     <span class="recent-post__date">9/25/2015</span>
                 </div>
             </div>
@@ -111,8 +125,10 @@
                     <p class="recent-post__text">Travel makes you see what a tiny place you occupy in the world.</p>
                 </div>
                 <div class="recent-post__info">
-                    <img class="recent-post__image-author" src="images/image.jpg" alt="William Wong">
-                    <span class="recent-post__author">William Wong</span>
+                    <div class="recent-post__info-wrap">
+                        <img class="recent-post__author-image" src="images/image.jpg" alt="William Wong">
+                        <span class="recent-post__author">William Wong</span>
+                    </div>
                     <span class="recent-post__date">9/25/2015</span>
                 </div>
             </div>
@@ -123,8 +139,10 @@
                     <p class="recent-post__text">Not all those who wander are lost.</p>
                 </div>
                 <div class="recent-post__info">
-                    <img class="recent-post__image-author" src="images/image-1.jpg" alt="Mat Vogels">
-                    <span class="recent-post__author">Mat Vogels</span>
+                    <div class="recent-post__info-wrap">
+                        <img class="recent-post__author-image" src="images/image-1.jpg" alt="Mat Vogels">
+                        <span class="recent-post__author">Mat Vogels</span>
+                    </div>
                     <span class="recent-post__date">9/25/2015</span>
                 </div>
             </div>
@@ -136,8 +154,10 @@
                         page.</p>
                 </div>
                 <div class="recent-post__info">
-                    <img class="recent-post__image-author" src="images/image-1.jpg" alt="Mat Vogels">
-                    <span class="recent-post__author">Mat Vogels</span>
+                    <div class="recent-post__info-wrap">
+                        <img class="recent-post__author-image" src="images/image-1.jpg" alt="Mat Vogels">
+                        <span class="recent-post__author">Mat Vogels</span>
+                    </div>
                     <span class="recent-post__date">9/25/2015</span>
                 </div>
             </div>
@@ -145,16 +165,23 @@
     </div>
 </section>
 <footer class="footer">
-    <div class="footer__navbar">
-        <div class="footer__container">
-            <span class="footer__title">Escape.</span>
-            <nav class="footer__nav">
-                <a class="footer__link" href="#">HOME</a>
-                <a class="footer__link" href="#">CATEGORIES</a>
-                <a class="footer__link" href="#">ABOUT</a>
-                <a class="footer__link" href="#">CONTACT</a>
-            </nav>
+    <form class="contact">
+        <label class="contact__title" for="email">
+            Stay in Touch
+        </label>
+        <div class="contact__fields">
+            <input class="contact__email" id="email" type="email" placeholder="Enter your email address">
+            <button class="contact_button" type="submit">Submit</button>
         </div>
+    </form>
+    <div class="footer__navbar">
+        <span class="footer__title">Escape.</span>
+        <nav class="footer__nav">
+            <a class="footer__link" href="#">HOME</a>
+            <a class="footer__link" href="#">CATEGORIES</a>
+            <a class="footer__link" href="#">ABOUT</a>
+            <a class="footer__link" href="#">CONTACT</a>
+        </nav>
     </div>
 </footer>
 </body>

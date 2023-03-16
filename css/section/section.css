@@ -1,8 +1,12 @@
-@import "featured-posts/featured-posts.css";
-@import "featured-post/featured-post.css";
-@import "recent/recent.css";
-@import "resent-post/recent-post.css";
+@import "featured/featured-posts.css";
+@import "featured/featured-post.css";
+@import "recent/recent-posts.css";
+@import "recent/recent-post.css";
 
 .section {
-    height: 1255px;
+    background: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

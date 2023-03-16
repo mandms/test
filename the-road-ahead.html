@@ -5,19 +5,22 @@
     <title>The road ahead</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="css/the-road-ahead.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <div class="header__navbar">
-        <div class="header__container">
-            <span class="header__title header__title_color_dark">Escape.</span>
-            <nav class="header__nav">
-                <a class="header__link header__title_color_dark" href="#">HOME</a>
-                <a class="header__link header__title_color_dark" href="#">CATEGORIES</a>
-                <a class="header__link header__title_color_dark" href="#">ABOUT</a>
-                <a class="header__link header__title_color_dark" href="#">CONTACT</a>
-            </nav>
-        </div>
+        <span class="header__title header__navbar_color_dark">Escape.</span>
+        <nav class="header__nav">
+            <a class="header__link header__navbar_color_dark" href="#">HOME</a>
+            <a class="header__link header__navbar_color_dark" href="#">CATEGORIES</a>
+            <a class="header__link header__navbar_color_dark" href="#">ABOUT</a>
+            <a class="header__link header__navbar_color_dark" href="#">CONTACT</a>
+        </nav>
     </div>
 </header>
 <section class="post">
@@ -69,13 +72,22 @@
     </div>
 </section>
 <footer class="footer">
-    <div class="footer__container">
+    <form class="contact">
+        <label class="contact__title" for="email">
+            Stay in Touch
+        </label>
+        <div class="contact__fields">
+            <input class="contact__email" id="email" type="email" placeholder="Enter your email address">
+            <button class="contact_button" type="submit">Submit</button>
+        </div>
+    </form>
+    <div class="footer__navbar">
         <span class="footer__title">Escape.</span>
         <nav class="footer__nav">
-            <a class="footer__link" href="">HOME</a>
-            <a class="footer__link" href="">CATEGORIES</a>
-            <a class="footer__link" href="">ABOUT</a>
-            <a class="footer__link" href="">CONTACT</a>
+            <a class="footer__link" href="#">HOME</a>
+            <a class="footer__link" href="#">CATEGORIES</a>
+            <a class="footer__link" href="#">ABOUT</a>
+            <a class="footer__link" href="#">CONTACT</a>
         </nav>
     </div>
 </footer>

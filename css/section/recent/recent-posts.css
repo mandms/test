@@ -1,0 +1,24 @@
+.recent-posts {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 89px;
+}
+
+.recent-posts__title {
+    border-bottom: 1px solid #DEDEDE;
+    padding: 0 26px 16px 26px;
+}
+
+.recent-posts__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px 19px 12px;
+    gap: 25px 24px;
+    max-width: 940px;
+}

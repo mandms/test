@@ -1,19 +1,23 @@
 .menu {
     height: 65px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu__nav {
     height: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 21px;
 }
 
 .menu__link {
-    width: 47px;
-    height: 20px;
-    font-family: 'Lora', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    width: 139px;
+    font: normal 400 14px/20px 'Lora', serif;
     text-align: center;
     color: #768088;
 }

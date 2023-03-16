@@ -1,31 +1,35 @@
 .header__navbar {
-    height: 74px;
-}
-
-.header__container {
-    height: 40px;
+    padding: 3px 0 11px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .header__title {
-    height: 26px;
-    font-family: 'Lora', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 26px;
+    font: normal 400 26px/26px 'Lora', serif;
+    margin-top: 13px;
 }
 
 .header__nav {
-    height: 40px;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 40px;
 }
 
 .header__link {
-    height: 20px;
-    font-family: 'Oxygen', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+    padding-top: 10px;
+    font: normal 400 12px/20px 'Oxygen', serif;
     letter-spacing: 0.6px;
     text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__navbar_color_light {
+    color: #FFFFFF;
+}
+
+.header__navbar_color_dark {
+    color: #2E2E2E;
 }
